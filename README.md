@@ -1,30 +1,30 @@
-**CryptoCurrency**
-Module 19 Homework
+**CryptoCurrency** <br />  
+Module 19 Homework   
 
-**OVERVIEW**
+**OVERVIEW** <br />  
 For this knowledge I used my knowledge of Python and unsupervised learning to predict if
 cryptocurrencies are affected by 24-hour or 7-day price changes.
 
-**INITIALIZING**
-    I loaded the crypto_market_data.csv into a dataframe, ran the summary statistics, and
+**INITIALIZING** <br /> 
+I loaded the crypto_market_data.csv into a dataframe, ran the summary statistics, and
 initially plotted the data.
 
-**DATA PREPARATION**
+**DATA PREPARATION** <br /> 
     I used the standardscaler() module from scikit-learn to normalize the data from the CSV file.
 I created a dataframe with the scaled data and set the "coin_id" as the new index.
 
-**Find the Best Value for k Using the Original Scaled DataFrame**
+**Find the Best Value for k Using the Original Scaled DataFrame** <br />    
 Use the elbow method to find the best value for k using the following steps:
 
--Create a list with the number of k values from 1 to 11.
--Create an empty list to store the inertia values.
--Create a for loop to compute the inertia with each possible value of k.
--Create a dictionary with the data to plot the elbow curve.
+-Create a list with the number of k values from 1 to 11.<br /> 
+-Create an empty list to store the inertia values.<br /> 
+-Create a for loop to compute the inertia with each possible value of k.<br /> 
+-Create a dictionary with the data to plot the elbow curve.<br /> 
 -Plot a line chart with all the inertia values computed with the different values of k to
- visually identify the optimal value for k.
--Answer the following question in your notebook: What is the best value for k?
+ visually identify the optimal value for k.<br /> 
+-Answer the following question in your notebook: What is the best value for k?<br /> 
 
-**Cluster Cryptocurrencies with K-means Using the Original Scaled Data**
+**Cluster Cryptocurrencies with K-means Using the Original Scaled Data**<br /> 
 Use the following steps to cluster the cryptocurrencies for the best value for k on the original scaled data:
 
 -Initialize the K-means model with the best value for k.
